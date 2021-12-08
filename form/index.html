@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <meta name="description" content="order cool tshirts">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="manifest" href="./site.webmanifest">
+  <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="./favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="./browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      document.querySelector(".menu-icon").addEventListener("click", () => {
+        document.querySelector(".main-menu").classList.toggle("menu-show");
+      });
+    });
+  </script>
+
+</head>
+
+
+
+<div class="main-menu">
+  <div class="menu-icon">
+    <svg viewbox="0 0 60 60">
+      <line x1="5%" y1="50%" x2="95%" y2="50%" />
+      <line x1="5%" y1="50%" x2="95%" y2="50%" />
+    </svg>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a id="About" href="../about">About</a></li>
+      <li><a id="Home" href="../index.html">Home</a></li>
+      <li><a id="Form" href="form/">Form</a></li>
+    </ul>
+  </nav>
+</div>
+
+<div class="formtop">
+  <img id="formicon" src="../images/water.svg" alt="watery goodness" />
+  <h2 class="formhead">Volunteer survey</h2>
+</div>
+
+<body id="formbody">
+
+  <section>
+    <form>
+
+
+
+      <label for="name">Full name:</label>
+
+
+      <input type="text" name="name" id="name">
+
+
+      <label for="email">Email address:</label>
+      <input type="email" name="email" id="email" required>
+
+      <label for="phone">Phone number:</label>
+      <input type="tel" name="phone" id="phone">
+
+      <label for="month">Your favorite ocean:</label>
+      <input type="text" name="text" id="ocean">
+
+
+      <fieldset>
+        <legend>What kind of volunteer work do you want to do? (Check all that apply)</legend>
+
+
+        <input type="checkbox" id="beach" name="volunteer" value="beach">
+        <label for="beach">Beach Cleanup</label>
+
+        <input type="checkbox" id="ocean2" name="volunteer" value="ocean2">
+        <label for="ocean2">Ocean Cleanup</label>
+
+        <input type="checkbox" id="wildlife" name="volunteer" value="wildlife">
+        <label for="wildlife">Marine Wildlife Help</label>
+
+        <input type="checkbox" id="policy" name="volunteer" value="policy">
+        <label for="policy">Policy</label>
+
+        <input type="checkbox" id="aware" name="volunteer" value="aware">
+        <label for="aware">Awareness</label>
+
+        <input type="checkbox" id="social" name="volunteer" value="social">
+        <label for="social">Social</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>How often do you go to the beach?</legend>
+
+        <input type="radio" name="freq" id="more" value="asphalt">
+        <label for="asphalt">More than once a week</label>
+
+        <input type="radio" name="freq" id="once" value="tar">
+        <label for="tar">Once a week</label>
+
+        <input type="radio" name="freq" id="month" value="salty">
+        <label for="salt">Once a month</label>
+
+        <input type="radio" name="freq" id="year" value="delicious">
+        <label for="delicious">Once a year</label>
+      </fieldset>
+
+
+      <label for="haiku">Anything else we should know about you?</label>
+      <textarea name="haiku" id="haiku" rows="10" placeholder="Don't be shy!"></textarea>
+
+
+      <button class="formbutton" type="submit">Submit Now</button>
+
+    </form>
+  </section>
+
+</body>
+
+</html>
